@@ -1,0 +1,104 @@
+.usage-example {
+  max-width: 800px; /* Increased max-width for larger box */
+  margin: 2em auto;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: #fffda4;
+}
+
+.language-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  margin-bottom: em;
+}
+
+.language-nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1em;
+}
+
+.language-nav button {
+  background-color: #091816;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.language-nav button:hover {
+  background-color: #0056b3;
+}
+
+.code-container {
+  position: relative; /* Set position for absolute positioning of the button */
+  padding: 1em; /* Add some padding around the code block */
+}
+
+.copy-button {
+  position: absolute; /* Positioning it in the corner */
+  top: 10px; /* Distance from the top */
+  right: 10px; /* Distance from the right */
+  padding: 0.3em 0.5em; /* Smaller padding for a smaller button */
+  background-color: #091816; /* Button color */
+  color: #fff; /* Button text color */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Transition for background color */
+}
+
+.copy-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Media query for screens smaller than 768px (tablets, mobile) */
+@media (max-width: 768px) {
+  .usage-example {
+    max-width: 90%; /* Reduce max-width for smaller screens */
+    padding: 1em; /* Adjust padding for mobile layout */
+  }
+
+  .language-nav ul {
+    flex-direction: column; /* Stack language buttons vertically */
+    gap: 0.5em; /* Reduce space between buttons */
+  }
+
+  .language-nav button {
+    padding: 0.5em 1em; /* Adjust button padding for smaller screens */
+  }
+
+  .code-container {
+    padding: 0.5em; /* Reduce padding around code block */
+  }
+
+  .copy-button {
+    top: 5px; /* Adjust top position */
+    right: 5px; /* Adjust right position */
+    padding: 0.2em 0.4em; /* Smaller padding for button */
+  }
+}
+
+/* Media query for screens smaller than 480px (small mobile) */
+@media (max-width: 480px) {
+  .usage-example {
+    max-width: 100%; /* Full width on very small screens */
+  }
+
+  .language-nav ul {
+    gap: 0.3em; /* Further reduce space between buttons */
+  }
+
+  .language-nav button {
+    font-size: 0.9em; /* Smaller font size for buttons */
+  }
+
+  .copy-button {
+    font-size: 0.8em; /* Smaller font for button text */
+  }
+}

@@ -1,0 +1,119 @@
+:root {
+  --primary-color: #2c2929; /* Dark color for navbar and hero */
+  --secondary-color: #2c2929; /* Light background for content */
+  --accent-color: #0056b3; /* Bright accent color */
+  --text-color: #000000; /* Dark text color */
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Cascadia Code", monospace; /* Cascadia Code font */
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the top */
+  min-height: 100vh;
+  background-color: var(--secondary-color); /* Light background */
+  text-align: center;
+}
+
+.navbar {
+  width: 100%; /* Full width */
+  background-color: var(--primary-color); /* Primary color for navbar */
+  color: white; /* White text */
+  padding: 0em; /* Padding around navbar */
+  display: flex; /* Flexbox for layout */
+  justify-content: center; /* Center the links horizontally */
+}
+
+.navbar-links {
+  list-style: none; /* Remove bullets */
+  display: flex; /* Horizontal layout for links */
+  gap: 2em; /* Space between links */
+}
+
+.navbar-links a {
+  font-size: large;
+  color: white; /* White text for links */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Bold text for links */
+}
+
+.hero {
+  padding: 2em 1em 1em 1em; /* Padding around the hero section */
+  background-color: var(--primary-color); /* Background color for hero */
+  color: #fff; /* White text color */
+  width: 100%; /* Full width */
+}
+
+.hero h1 {
+  font-size: 2em; /* Large font for heading */
+  margin-top: 0.5em;
+  margin-bottom: 2.5em; /* Space below heading */
+  font-family: "Cascadia Code", monospace; /* Cascadia Code font for h1 */
+}
+
+.hero p {
+  font-size: 1.2em; /* Font size for description */
+  padding-top: 2em;
+  color: #ffffff; /* Light gray for description text */
+  font-family: "Cascadia Code", monospace; /* Cascadia Code font for p */
+}
+
+.footer {
+  background-color: var(--primary-color); /* Match the primary color */
+  color: white; /* White text for footer */
+  padding: 1em; /* Padding for footer */
+  text-align: center; /* Center text in footer */
+  position: relative; /* Optional: set position if needed */
+  bottom: 0; /* Align to the bottom */
+  width: 100%; /* Full width */
+}
+
+/* Media query for screens smaller than 768px (tablets, mobile) */
+@media (max-width: 768px) {
+  .navbar-links {
+    flex-direction: column; /* Stack links vertically */
+    gap: 1em; /* Reduce spacing between links */
+  }
+
+  .hero h1 {
+    font-size: 1.5em; /* Smaller font size for heading */
+  }
+
+  .hero p {
+    font-size: 1em; /* Smaller font size for description */
+  }
+
+  .homepage {
+    padding: 1em; /* Add padding for mobile layout */
+  }
+
+  .footer {
+    padding: 0.5em; /* Adjust footer padding */
+  }
+}
+
+/* Media query for screens smaller than 480px (small mobile) */
+@media (max-width: 480px) {
+  .navbar-links {
+    gap: 0.5em; /* Further reduce spacing between links */
+  }
+
+  .hero h1 {
+    font-size: 1.2em; /* Even smaller font for small screens */
+  }
+
+  .hero p {
+    font-size: 0.9em; /* Further reduce font size for description */
+  }
+
+  .footer {
+    font-size: 0.8em; /* Smaller font for footer */
+  }
+}
