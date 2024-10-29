@@ -7,7 +7,7 @@ function UsageExample() {
   const [activeLanguage, setActiveLanguage] = useState("html");
 
   const codeExamples = {
-    html: `<form action="http://localhost:3000/YOUR_API_KEY_HERE/forms/submit" method="POST">
+    html: `<form action="https://api-4forms.vercel.app/YOUR_API_KEY_HERE/forms/submit" method="POST">
   <label for="name">Name:</label>
   <input type="text" id="name" name="name" required>
   
@@ -25,7 +25,7 @@ formData.append('name', 'Your Name');
 formData.append('email', 'your.email@example.com');
 formData.append('message', 'Your message here.');
 
-fetch('http://localhost:3000/YOUR_API_KEY_HERE/forms/submit', {
+fetch('https://api-4forms.vercel.app/YOUR_API_KEY_HERE/forms/submit', {
   method: 'POST',
   body: formData,
 })
@@ -40,7 +40,7 @@ function MyForm() {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    fetch('http://localhost:3000/YOUR_API_KEY_HERE/forms/submit', {
+    fetch('https://api-4forms.vercel.app/YOUR_API_KEY_HERE/forms/submit', {
       method: 'POST',
       body: formData,
     })
