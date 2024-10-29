@@ -6,7 +6,7 @@ const cors = require("cors");
 require("dotenv").config();
 
 const corsOptions = {
-  origin: ["http://localhost:5173"],
+  origin: ["https://api4forms.vercel.app/"],
 };
 
 const app = express();
