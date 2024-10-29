@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:3000/api";
+const API_BASE_URL = "https://api-4forms.vercel.app/api";
 
 export const requestApiKey = async (email) => {
   try {
