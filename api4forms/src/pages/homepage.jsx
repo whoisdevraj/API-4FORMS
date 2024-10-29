@@ -14,7 +14,7 @@ function HomePage() {
           <li>
             <a href="#request-api">
               AN API WHICH MAKES WEBPAGE FORMS SUBMISSIONS DIRECTLY INTO YOUR
-              MAIL BOX, SO THERE NOW NO NEED FOR A BACKEND SERVER.
+              MAIL BOX, SO NO NEED FOR A BACKEND SERVER.
             </a>
           </li>
         </ul>
