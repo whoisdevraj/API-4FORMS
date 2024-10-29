@@ -6,7 +6,7 @@ const cors = require("cors");
 require("dotenv").config();
 
 const corsOptions = {
-  origin: ["https://api4forms.vercel.app/"],
+  origin: ["https://api4forms.vercel.app"],
 };
 
 const app = express();
