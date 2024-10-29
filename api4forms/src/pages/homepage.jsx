@@ -1,6 +1,6 @@
 import React from "react";
 import ApiRequestForm from "../components/ApiRequestForm";
-import "./HomePage.css";
+import "./homepage.css";
 import UsageExample from "../components/UsageExample";
 
 function HomePage() {
